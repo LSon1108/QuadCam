@@ -1,0 +1,312 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- This URDF was automatically created by SolidWorks to URDF Exporter! Originally created by Stephen Brawner (brawner@gmail.com) 
+     Commit Version: 1.6.0-4-g7f85cfe  Build Version: 1.6.7995.38578
+     For more information, please see http://wiki.ros.org/sw_urdf_exporter -->
+<robot
+  name="QuadCam">
+  <link
+    name="base_link">
+    <inertial>
+      <origin
+        xyz="7.84E-05 0.013955 -4.8602E-05"
+        rpy="0 0 0" />
+      <mass
+        value="0.061885" />
+      <inertia
+        ixx="1.9641E-05"
+        ixy="4.507E-08"
+        ixz="1.4041E-08"
+        iyy="3.9818E-05"
+        iyz="3.2434E-11"
+        izz="2.2177E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://QuadCam/meshes/base_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="1 1 1 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://QuadCam/meshes/base_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <link
+    name="FL">
+    <inertial>
+      <origin
+        xyz="-0.00065367 0.0099823 0.00011746"
+        rpy="0 0 0" />
+      <mass
+        value="0.0021617" />
+      <inertia
+        ixx="5.3596E-08"
+        ixy="1.0668E-08"
+        ixz="-6.4419E-08"
+        iyy="1.4407E-06"
+        iyz="-2.8266E-10"
+        izz="1.4128E-06" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://QuadCam/meshes/FL.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="1 1 1 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://QuadCam/meshes/FL.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="FL"
+    type="continuous">
+    <origin
+      xyz="0.074799 0.074799 0.0275"
+      rpy="1.5708 0 -2.3233" />
+    <parent
+      link="base_link" />
+    <child
+      link="FL" />
+    <axis
+      xyz="0 1 0" />
+  </joint>
+  <link
+    name="FR">
+    <inertial>
+      <origin
+        xyz="-0.00065367 0.0099823 0.00011746"
+        rpy="0 0 0" />
+      <mass
+        value="0.0021617" />
+      <inertia
+        ixx="5.3596E-08"
+        ixy="1.0668E-08"
+        ixz="-6.4419E-08"
+        iyy="1.4407E-06"
+        iyz="-2.8265E-10"
+        izz="1.4128E-06" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://QuadCam/meshes/FR.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="1 1 1 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://QuadCam/meshes/FR.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="FR"
+    type="continuous">
+    <origin
+      xyz="0.074605 -0.074605 0.0274"
+      rpy="1.5708 0 2.3545" />
+    <parent
+      link="base_link" />
+    <child
+      link="FR" />
+    <axis
+      xyz="0 -1 0" />
+  </joint>
+  <link
+    name="BL">
+    <inertial>
+      <origin
+        xyz="-0.00065367 0.0099823 0.00011746"
+        rpy="0 0 0" />
+      <mass
+        value="0.0021617" />
+      <inertia
+        ixx="5.3596E-08"
+        ixy="1.0668E-08"
+        ixz="-6.4419E-08"
+        iyy="1.4407E-06"
+        iyz="-2.8266E-10"
+        izz="1.4128E-06" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://QuadCam/meshes/BL.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="1 1 1 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://QuadCam/meshes/BL.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="BL"
+    type="continuous">
+    <origin
+      xyz="-0.075231 0.075231 0.0276"
+      rpy="1.5708 0 2.3816" />
+    <parent
+      link="base_link" />
+    <child
+      link="BL" />
+    <axis
+      xyz="0 -1 0" />
+  </joint>
+  <link
+    name="BR">
+    <inertial>
+      <origin
+        xyz="-0.00065367 0.0099823 0.00011746"
+        rpy="0 0 0" />
+      <mass
+        value="0.0021617" />
+      <inertia
+        ixx="5.3596E-08"
+        ixy="1.0668E-08"
+        ixz="-6.4419E-08"
+        iyy="1.4407E-06"
+        iyz="-2.8265E-10"
+        izz="1.4128E-06" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://QuadCam/meshes/BR.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="1 1 1 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://QuadCam/meshes/BR.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="BR"
+    type="continuous">
+    <origin
+      xyz="-0.075037 -0.075037 0.0275"
+      rpy="1.5708 0 0.94183" />
+    <parent
+      link="base_link" />
+    <child
+      link="BR" />
+    <axis
+      xyz="0 1 0" />
+  </joint>
+  <link
+    name="Camera">
+    <inertial>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <mass
+        value="0" />
+      <inertia
+        ixx="0"
+        ixy="0"
+        ixz="0"
+        iyy="0"
+        iyz="0"
+        izz="0" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://QuadCam/meshes/Camera.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="1 1 1 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://QuadCam/meshes/Camera.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="Camera"
+    type="fixed">
+    <origin
+      xyz="0.0033168 0.00056082 0.0351"
+      rpy="3.1416 0 -1.5708" />
+    <parent
+      link="base_link" />
+    <child
+      link="Camera" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+</robot>
